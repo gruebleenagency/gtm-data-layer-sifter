@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>GTM Events</h1>
+    <h2 class="error">
+        <span class="message"></span>
+    </h2>
+    <ul class="event-list"></ul>
+    <h1>Results</h1>
+    <div class="results">
+        <table>
+            <tr>
+                <td>
+                    <strong>Path to element:</strong>
+                </td>
+                <td>
+                    <span class="path">n/a</span>
+                </td>
+                <td></td>
+                <!-- <td><a class="btn-copy" href="javascript:void(0)">Copy</a></td> -->
+            </tr>
+            <tr>
+                <td>
+                    <strong>Path to Value:</strong>
+                </td>
+                <td>
+                    <span class="valuePath">n/a</span>
+                </td>
+                <td>
+                    <span class="valuePath_val"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Path to Text:</strong>
+                </td>
+                <td>
+                    <span class="textPath">n/a</span>
+                </td>
+                <td>
+                    <span class="textPath_val"></span>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="jquery-3.1.0.min.js"></script>
+    <script src="messaging.js"></script>
+    <script src="panel.js"></script>
+    <style type="text/css">
+    h1 {
+        background-color: #5799f9;
+        color: white;
+        margin: 0;
+        padding: 4px 0px 4px 7px;
+        border-radius: 3px;
+    }
+    
+    .results,
+    .event-list {
+        font-size: 15px;
+        font-family: helvetica, sans-serif;
+    }
+    
+    .event {
+        padding: 7px;
+        border-radius: 3px;
+        display: block;
+    }
+    
+    .selected {
+        background-color: #c4ffd9;
+        margin-left: 10px;
+    }
+    .error {
+        display:none;
+    }
+    </style>
+</body>
+
+</html>

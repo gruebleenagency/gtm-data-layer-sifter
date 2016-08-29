@@ -1,0 +1,30 @@
+{
+    "name": "GTM dataLayer Sifter",
+    "version": "0.1",
+    "description": "A plugin to find the dot notation from an event's element to another element on the page.",
+    "devtools_page": "devtools.html",
+    "background": {
+        // "persistent": false,
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "permissions": [
+        "tabs", 
+        "clipboardRead",
+        "clipboardWrite",
+        "webNavigation",
+        "management",
+        "http://*/*",
+        "https://*/*"
+    ],
+    "manifest_version": 2,
+    "web_accessible_resources": ["inserted-script.js"]
+    // , "content_scripts": [
+    // {
+    //   "matches": ["http://*/*", "https://*/*"],
+    //   // "css": ["mystyles.css"],
+    //   "js": ["panel.js"],
+    //   "run_at": "document_end"
+    // }]
+}
